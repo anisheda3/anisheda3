@@ -1,0 +1,47 @@
+name: Regrow the koi pond
+
+on:
+  schedule:
+    - cron: "17 2 * * *"      # nightly, 02:17 UTC
+  workflow_dispatch:           # "Run workflow" button in the Actions tab
+  push:
+    branches: [main]
+    paths: ["pond.json", "tools/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pond
+  cancel-in-progress: true
+
+jobs:
+  regrow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: tools/requirements.txt
+
+      - run: pip install -r tools/requirements.txt
+
+      - name: Measure projects and regrow the pond
+        run: python tools/pond.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit only if the pond changed
+        run: |
+          git add README.md assets/koi-pond.svg assets/pond-state.json
+          if git diff --cached --quiet; then
+            echo "No change in the pond today."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Regrow koi pond from latest project activity"
+            git push
+          fi

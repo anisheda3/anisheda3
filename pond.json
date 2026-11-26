@@ -1,0 +1,24 @@
+{
+  "user": "anisheda3",
+  "domains": {
+    "health":  { "label": "Health & life",      "kinds": ["tancho", "kohaku", "kohaku", "kohaku"] },
+    "finance": { "label": "Finance agents",     "kinds": ["ogon", "orenji", "yamabuki"] },
+    "water":   { "label": "Water & geospatial", "kinds": ["asagi"] },
+    "safety":  { "label": "Trust & safety",     "kinds": ["showa"] },
+    "product": { "label": "Products",           "kinds": ["platinum"] },
+    "new":     { "label": "Just hatched",       "kinds": ["sanke"] }
+  },
+  "fish": [
+    { "name": "plantdoc",                         "label": "PlantDoc",    "domain": "health",  "repos": ["plantdoc"],                          "about": "AR plant-disease diagnosis and treatment simulator for Android" },
+    { "name": "OpthaMiss",                        "label": "OpthaMiss",   "domain": "health",  "repos": ["OpthaMiss"],                         "about": "AI-assisted eye screening: anterior and fundus models" },
+    { "name": "mediCheck",                        "label": "mediCheck",   "domain": "health",  "repos": ["mediCheck"],                         "about": "Multi-agent scientific claim checker with a fine-tuned Qwen3-4B" },
+    { "name": "ai-fitness-analysis-system",       "label": "FitVision",   "domain": "health",  "repos": ["ai-fitness-analysis-system"],        "about": "Real-time fitness analysis: pose estimation, rep counting, recommendations" },
+    { "name": "Saarthi.ai",                       "label": "Saarthi",     "domain": "product", "repos": ["Hello-Saarthi-ver1", "Saarthi.Ai-Frontend-ver1"], "about": "Saarthi.ai: AI guidance platform (FastAPI + React)" },
+    { "name": "flood-routing-gis",                "label": "FloodRoute",  "domain": "water",   "repos": ["flood-routing-gis"],                 "about": "GIS + ML flood routing for Vijayawada: LightGBM suitability and Dijkstra routes" },
+    { "name": "finsight-fpa",                     "label": "FinSight",    "domain": "finance", "repos": ["finsight-fpa"],                      "about": "Autonomous FP&A: forecasting, variance analysis and CFO-ready commentary" },
+    { "name": "fyntwin-invoice-intake",           "label": "InvoiceAI",   "domain": "finance", "repos": ["fyntwin-invoice-intake"],            "about": "Agentic accounts-payable intake that matches invoices to POs in ERPNext" },
+    { "name": "dispute-sentinel-001",             "label": "Sentinel",    "domain": "finance", "repos": ["dispute-sentinel-001"],              "about": "Chargeback risk manager that fights disputes by expected value" },
+    { "name": "multimodal-hate-speech-detection", "label": "MemeGuard",   "domain": "safety",  "repos": ["multimodal-hate-speech-detection"],  "about": "Multimodal hate and abusive content detection for text + image memes" }
+  ],
+  "ignore": ["anisheda3", "anish-portfolio", "OpthaMiss4"]
+}

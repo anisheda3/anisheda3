@@ -1,0 +1,92 @@
+[
+  {
+    "name": "plantdoc",
+    "domain": "health",
+    "kind": "tancho",
+    "code": 2379165,
+    "commits": 2,
+    "scale": 1.222,
+    "wag": 2.0
+  },
+  {
+    "name": "OpthaMiss",
+    "domain": "health",
+    "kind": "kohaku",
+    "code": 1742738,
+    "commits": 1,
+    "scale": 1.164,
+    "wag": 2.7
+  },
+  {
+    "name": "mediCheck",
+    "domain": "health",
+    "kind": "kohaku",
+    "code": 438996,
+    "commits": 1,
+    "scale": 0.974,
+    "wag": 2.0
+  },
+  {
+    "name": "ai-fitness-analysis-system",
+    "domain": "health",
+    "kind": "kohaku",
+    "code": 261141,
+    "commits": 6,
+    "scale": 0.95,
+    "wag": 2.7
+  },
+  {
+    "name": "Saarthi.ai",
+    "domain": "product",
+    "kind": "platinum",
+    "code": 1519101,
+    "commits": 161,
+    "scale": 1.307,
+    "wag": 2.7
+  },
+  {
+    "name": "flood-routing-gis",
+    "domain": "water",
+    "kind": "asagi",
+    "code": 147418,
+    "commits": 7,
+    "scale": 0.876,
+    "wag": 2.0
+  },
+  {
+    "name": "finsight-fpa",
+    "domain": "finance",
+    "kind": "ogon",
+    "code": 361009,
+    "commits": 10,
+    "scale": 1.011,
+    "wag": 2.7
+  },
+  {
+    "name": "fyntwin-invoice-intake",
+    "domain": "finance",
+    "kind": "orenji",
+    "code": 148937,
+    "commits": 14,
+    "scale": 0.901,
+    "wag": 2.7
+  },
+  {
+    "name": "dispute-sentinel-001",
+    "domain": "finance",
+    "kind": "yamabuki",
+    "code": 385924,
+    "commits": 1,
+    "scale": 0.957,
+    "wag": 2.7
+  },
+  {
+    "name": "multimodal-hate-speech-detection",
+    "domain": "safety",
+    "kind": "showa",
+    "code": 143688,
+    "commits": 3,
+    "scale": 0.847,
+    "wag": 2.7
+  }
+]
